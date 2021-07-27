@@ -76,7 +76,35 @@ namespace Lab3_1
 
                 Console.Write("Welcome to our Dev.Build class. Which student would you like to learn more about? (Please enter a number 1-5):  ");
                 int selection = int.Parse(Console.ReadLine());
+                bool validSelection = false;
 
+                do
+                {
+                    if (selection == 1)
+                    {
+                        Console.WriteLine($"You selected student: {studentNames[selection]}.");
+                    }
+                    else if (selection == 2)
+                    {
+                        Console.WriteLine($"You selected student: {studentNames[selection]}.");
+                    }
+                    else if (selection == 3)
+                    {
+                        Console.WriteLine($"You selected student: {studentNames[selection]}.");
+                    }
+                    else if (selection == 4)
+                    {
+                        Console.WriteLine($"You selected student: {studentNames[selection]}.");
+                    }
+                    else if (selection == 5)
+                    {
+                        Console.WriteLine($"You selected student: {studentNames[selection]}.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("You entered an invalid selection. Please enter a number between 1 and 5.");
+                    }
+                } while (validSelection == true);
                 //take user selection and list approriate name food and title
 
                 do
